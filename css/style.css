@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+:root{
+    --font-ubuntu:'Ubuntu',sans-serif;
+    --font-poppins:'Poppins',sans-serif;
+    --primary-color: #0E2C40;
+    --secondary-color:#68c0ff;
+    --white:#fff;
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+
+
+/* style navbar */
+
+.max-width{
+    max-width: 1900px;
+    padding: 0 40px;
+    margin: auto;
+}
+
+.navbar{
+    background: var(--primary-color);
+    width: 100%;
+    z-index: 999;
+    padding: 15px 0;
+    position: fixed;
+    font-family: var(--font-ubuntu);
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo a{
+    font-size: 35px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .menu li a {
+    display: block;
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+
+.navbar .menu li a:hover{
+    color: var(--secondary-color);
+    
+}
+
+.menu-btn{
+    color: var(--white);
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+.hire__me{
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white);
+    font-size: 25px;
+    padding: 12px 36px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.hire__me:hover{
+ color: var(--primary-color);
+ background: none;
+}
+
+
+/* home section style */
+
+.home{
+    display: flex;
+    height: 100vh;
+    color:var(--primary-color);
+    min-height: 500px;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-ubuntu);
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+}
+
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home .home-content .text-3{
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+.home .home-content .text-3 span{
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+/* lottie */
+.father__lottie .lottie{
+    width: 300px;
+    height: 300px;     
+ }
+
+ section{
+     padding: 100px 0;
+ }
+
+ .about{
+     font-family: var(--font-poppins);
+     background: var(--primary-color); 
+ }
+ /* similiar style */
+ section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: var(--font-ubuntu);
+    color: var(--white);
+ }
+ 
+ section .title::before{
+     content: "";
+     position: absolute;
+     bottom: 0px;
+     left: 50%;
+     width: 180px;
+     height: 3px;
+     background: var(--white);
+     transform: translateX(-50%);
+ }
+
+
+ section .title::after{
+    content: "who i am";
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    font-size: 20px;
+    color: var(--white);
+    padding: 5px;
+    background: var(--primary-color);
+    transform: translateX(-50%);
+}
+
+.about .about-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax( min( 100%, 30rem), 1fr));
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.about .about-content .left img{
+    height: 400px;
+    max-width: 400px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.profile-img{
+    margin: auto;
+    display: block;
+}
+
+.about .about-content .right .text{
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--white);
+}
+
+.about .about-content .right .text span{
+    color: var(--secondary-color);
+  }
+
+  .about .about-content .right p{
+    text-align: justify;
+    color: var(--white);
+    font-size: 20px;
+  }
+
+  .about .about-content .right a{
+    display: inline-block;
+    background: var(--white);
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 500;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid var(--white);
+    transition: all 0.3s ease;
+  }
+
+  .about .about-content .right a:hover{
+    color: var(--white);
+    background: none;
+  }
+
+
+  .proyect{
+    font-family: var(--font-poppins);
+    background: var(--white); 
+  }
+
+  .proyect .title{
+    color: var(--primary-color);
+ }
+ 
+ .proyect .title::before{
+     content: "";
+     background: var(--primary-color);
+     transform: translateX(-50%);
+ }
+
+
+ .proyect .title::after{
+    content: "my proyects";
+    color: var(--primary-color);
+    background: var(--white);
+}
+
+.proyect .proyect-content{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.proyect .proyect-content .card-proyect-one,
+.card-proyect-two,
+.card-proyect-three,
+.card-proyect-four
+{
+    display: inline-block;
+    border: 1px solid var(--primary-color);
+    max-width: 350px;
+    width: 100%;
+    box-shadow: 3px 5px 6px var(--primary-color);
+    border-radius: 5px;
+}
+
+.proyect .proyect-content .card-title
+{
+   font-weight: bold;
+   color: var(--primary-color);
+   border-bottom: 1px solid var(--primary-color);
+}
+
+.proyect .proyect-content  .card-body img{
+    margin-top: 10px;
+    padding: 0 5px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.proyect .proyect-content  .card-body span{
+   display: block;
+   text-align: center;
+   font-size: 14px;
+   padding: 0 10px;
+   height: 160px;
+}
+
+.proyect .proyect-content  .card-body  small{
+    margin-left: 5px;
+    display: block;
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+ }
+
+.proyect .proyect-content  .card-footer {
+    border-top: 1px solid var(--primary-color);
+    margin-top: 10px;
+ }
+
+ .proyect .proyect-content  .card-footer a {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 500;
+    padding: 10px 30px;
+    width: 100%;
+    border-radius: 2px;
+    border: 2px solid var(--primary-color);
+    transition: all 0.3s ease;
+ }
+
+ .proyect .proyect-content  .card-footer a:hover {
+    color: var(--primary-color);
+    background: none;
+ }
+
+
+ /* Style skills */
+
+ .skills{
+    font-family: var(--font-poppins);
+    background: var(--primary-color); 
+  }
+
+  .skills .title{
+    color: var(--white);
+ }
+ 
+ .skills .title::before{
+     content: "";
+     background: var(--white);
+     transform: translateX(-50%);
+ }
+
+
+ .skills .title::after{
+    content: "my skills";
+    color: var(--white);
+    background: var(--primary-color);
+}
+
+
+/* Responsive media  */
+  @media screen and (min-width: 1440px){
+    .about .about-content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        
+    }
+  }
+
+  @media  screen and (max-width:1260px){
+    
+    .about .about-content .left .profile-img{
+       height: 350px;
+       width: 350px;
+    }
+    .about .about-content .right .text{
+        text-align: center;
+    }
+    .father__cv{
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:780px) {
+    .proyect .proyect-content {
+        justify-content: center;
+    }
+}
+
+@media  screen and (max-width:720px) {
+    .max-width{
+        padding: 0 30px;
+        max-width: 800px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+      content: "\f00d";
+    }
+   
+    .navbar .menu{
+        position: fixed;
+        background: var(--primary-color);
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top: 0;
+        text-align: center;
+        padding-top: 30vh;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 50px;
+    }
+    .about .about-content .right p{
+       flex: 100%;
+    }
+
+    .about .about-content .right a{
+        width: 100%;
+        text-align: center;
+     }
+    
+}
+
+
+@media  screen and (max-width:472px){
+    .home .home-content .text-3{
+        font-size: 30px;
+    }
+ }
+@media  screen and (max-width:412px){
+    .home .max-width{
+        margin: 0;
+    }
+    .home .home-content{
+        text-align: center;
+    }
+    .father__lottie .lottie{
+       width: 250px;
+       height: 250px;     
+    }
+    .home .home-content .text-2{
+        font-size: 50px;
+    }
+    .home .home-content .text-3{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:1479px){
+    .proyect .proyect-content .card-proyect-one,
+    .card-proyect-two,
+    .card-proyect-three,
+    .card-proyect-four
+    {
+      margin-top: 30px;
+      ;
+    }
+ }
+
+
+
+
+
