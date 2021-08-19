@@ -8,6 +8,7 @@
 }
 html{
     scroll-behavior: smooth;
+    font-size: 16px;
 }
 *{
     padding: 0;
@@ -264,11 +265,22 @@ html{
     text-align: center;
 }
 
+.proyect .proyect-content .card-body{
+    min-height: 360px;
+}
+.father_img{
+    display: block;
+    max-height: 160px;
+    overflow: hidden;
+}
+
 .proyect .proyect-content .card-proyect-one,
 .card-proyect-two,
 .card-proyect-three,
-.card-proyect-four
+.card-proyect-four,
+.card-proyect-five
 {
+    margin-top: 1rem;
     display: inline-block;
     border: 1px solid var(--primary-color);
     max-width: 350px;
@@ -285,7 +297,6 @@ html{
 }
 
 .proyect .proyect-content  .card-body img{
-    margin-top: 10px;
     padding: 0 5px;
     width: 100%;
     display: block;
@@ -354,6 +365,129 @@ html{
     content: "my skills";
     color: var(--white);
     background: var(--primary-color);
+}
+
+.skills .skills-content{
+    width: 100%;
+    background-color: #3198dd23;
+    box-shadow: inset 0px 0px 8px 2px rgb(1, 17, 54);
+    color: white;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax( min( 100%, 9rem), 1fr));
+    flex-wrap: wrap;
+    min-height: 300px;
+    padding: 0 50px;
+    transition: 0.3s ease
+}
+
+.skills .skills-content img{
+    width: 60px;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}
+
+.skills .skills-content .technology-icon:hover{
+
+    transform: scale(.9);
+    transition: .2s;
+}
+.skills .skills-content span{
+    display: block;
+}
+
+.skills .skills-content .technology-icon{
+    margin: 1rem auto;
+}
+
+/* Contacto */
+
+.contact{
+    background: var(--white);
+  }
+
+  .contact .title{
+    color: var(--primary-color);
+ }
+ 
+ .contact .title::before{
+     content: "";
+     background: var(--primary-color);
+     transform: translateX(-50%);
+ }
+
+
+ .contact .title::after{
+    content: "hire me";
+    color: var(--primary-color);
+    background: var(--white);
+}
+
+.contact .contact-content{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-ubuntu);
+}
+.contact .contact-content .father__input {
+    
+    display: block;
+    
+}
+.contact .contact-content .father__input input,textarea{
+    
+    max-width: 500px;
+    width: 100%;
+    padding: .5rem .5rem;
+    margin: .5rem auto;
+    display: block;
+    font-family: var(--font-ubuntu);
+    border-radius: .5rem;
+    border: 3px solid var(--primary-color);
+}
+
+
+.contact .contact-content .father__input input::placeholder,textarea::placeholder{
+   color: var(--primary-color);
+}
+
+.contact .contact-content .btn,button{
+    max-width: 500px;
+    width: 100%;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: .5rem;
+    padding: .3rem;
+    margin: .5rem auto;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.contact .contact-content .btn,button:hover{
+    
+    background: var(--white);
+    color: var(--primary-color);
+    border-radius: .5rem;
+    padding: .3rem;
+}
+
+footer{
+    width: 100%;
+    background: var(--primary-color);
+    color: var(--white);
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: var(--font-ubuntu);
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 1.2rem 0;
 }
 
 
