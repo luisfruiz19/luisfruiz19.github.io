@@ -166,7 +166,7 @@ html{
 
 
  section .title::after{
-    content: "who i am";
+    content: "quien soy";
     position: absolute;
     bottom: -12px;
     left: 50%;
@@ -252,7 +252,7 @@ html{
 
 
  .proyect .title::after{
-    content: "my proyects";
+    content: "";
     color: var(--primary-color);
     background: var(--white);
 }
@@ -362,7 +362,7 @@ html{
 
 
  .skills .title::after{
-    content: "my skills";
+    content: "tecnologias";
     color: var(--white);
     background: var(--primary-color);
 }
@@ -422,7 +422,7 @@ html{
 
 
  .contact .title::after{
-    content: "hire me";
+    content: "";
     color: var(--primary-color);
     background: var(--white);
 }
